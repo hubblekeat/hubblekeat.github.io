@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+---
+# front matter tells Jekyll to process Liquid
+title: Home
+
+---
+<!doctype html>
 <html>
-<head>
-   <title>Test</title>
-</head>
-<body>
-   this is only a test.
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>{{ "Hello World!" | downcase }}</h1>
+  </body>
 </html>
